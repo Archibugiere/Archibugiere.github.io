@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Archibugiere/Archibugiere.github.io#readme",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "font-awesome-animation": "^1.1.1"
   }
 }
