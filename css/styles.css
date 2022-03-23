@@ -41,9 +41,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 1s linear infinite;
+
     @keyframes shine {
         to {
             background-position: 200% center;
         }
     }
 }
+
+/* NAVBAR */
+.nav-pills .nav-link {
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black;
+    background-color: #fdb50e;
+}
+
