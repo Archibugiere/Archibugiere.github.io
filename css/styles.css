@@ -142,3 +142,7 @@ a, a:hover, a:visited, a:active {
 .vh-min-100{
     min-width: 100vh;
 }
+
+.card-img-top{
+    width: auto;
+}
