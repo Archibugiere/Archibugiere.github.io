@@ -8,31 +8,33 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="node_modules/font-awesome-animation/css/font-awesome-animation.css">
         <link rel="stylesheet" href="css/styles.css">
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
-    <body class="bg-dark" data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-offset="56" tabindex="0">
-        <nav id="mynavbar" class="navbar navbar-dark fixed-top bg-dark px-3 justify-content-center">
-            <ul class="nav nav-pills">
+    <body class="bg-dark" data-bs-spy="scroll" data-bs-offset="0" data-bs-target="#mynavbar" tabindex="0">
+        <nav id="mynavbar" class="navbar navbar-dark fixed-top bg-dark px-3 justify-content-center text-center">
+            <ul class="nav nav-pills justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">Archibugiere</a>
+                    <a class="nav-link" href="#introduction-section">Archibugiere</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Projects</a>
+                    <a class="nav-link" href="#projects-section">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading3">Experiences</a>
+                    <a class="nav-link" href="#experiences-section">Experiences</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading4">Technologies</a>
+                    <a class="nav-link" href="#techs-section">Technologies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading5">Contacts</a>
+                    <a class="nav-link" href="#contacts-section">Contacts</a>
                 </li>
 
             </ul>
         </nav>
-        <section id="scrollspyHeading1" class="d-flex bg-secondary text-white rounded-bottom text-center vh-100">
+        <div id="introduction-section" style="height: 56px;"></div>
+        <section id="introduction-section"
+            class="d-flex bg-secondary text-white rounded-bottom text-center min-vh-100-nav pt-4">
             <div class="container my-auto text-center">
                 <i class="fa-solid fa-xl fa-terminal"></i>
                 <h1 class="display-6">Hello there!</h1>
@@ -67,22 +69,311 @@
 
             </div>
         </section>
-        <section id="scrollspyHeading2" class="d-flex bg-warning text-white rounded-bottom text-center vh-100">
+        <span class="anchor" id="projects-section"></span>
+        <section id="projects-section" class="d-flex bg-black text-white min-vh-100-nav">
 
+            <section class="container my-auto">
+                <div class="mx-auto d-block pt-5 pb-5 text-center text-light justify-content-center"
+                    data-aos="fade-right">
+                    <h1 class="display-6">My current work</h1>
+                    <p class="fs-5 text-secondary">These are the projects that i can share with you at the moment</p>
+                    <div
+                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-3 g-xl-4 pb-md-3 pb-lg-5 justify-content-center">
+                        <div class="col" data-aos="zoom-in">
+                            <a href="https://www.instagram.com/easybar.itsos/">
+                                <div class="card h-100 card-hover bg-warning border-0 ebar-gradient">
+                                    <div class="rounded-3 w-auto lh-1 mt-4 mx-auto me-auto">
+                                        <img style="height: 130px;" src="assets/EasyBar.png" class="card-img-top"
+                                            alt="..." />
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <p class="h4"><b>EasyBar</b></p>
+                                        <p class="mb-0">The EasyBar app allows you to order your favourite snack at
+                                            school!<br>This is a <b>multi-platform adaptive application</b> made with
+                                            the
+                                            <b>Flutter</b>
+                                            framework. Is uses <b>Firestore</b> as database and <b>Firebase</b> Auth for
+                                            its
+                                            authentication functionality</b></p>
+                                        <p class="pt-2 text-black">Discover more by clicking this card!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col" data-aos="zoom-in">
+                            <a href="https://olicyber.it/edizioni/2022">
+                                <div class="card h-100 card-hover bg-light border-0 oli-gradient">
+                                    <div class="rounded-3 w-auto lh-1 mt-4 mx-auto me-auto">
+                                        <img style="height: 130px;" src="assets/olicyber.png" class="card-img-top"
+                                            alt="..." />
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <p class="h4"><b>Cybersecurity Olympics</b></p>
+                                        <p class="mb-0">I'm currently training for the finals of the <b>Olicyber</b>,
+                                            the italian national
+                                            cybersecurity olimpics, which will take place in Turin at the end of
+                                            May.<br><br><br></p>
+                                        <p class="pt-2 text-black">Discover more by clicking this card!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
         </section>
-        <section id="scrollspyHeading3" class="d-flex bg-dark text-white rounded-bottom text-center vh-100">
+        <span class="anchor" id="experiences-section"></span>
 
+        <section id="experiences-section" class="d-flex bg-dark text-white rounded-bottom min-vh-100-nav">
+            <div class="my-auto ps-5" data-aos="fade-right">
+                <h1 class="display-6">Discover my experiences on Linkedin</h1>
+            </div>
         </section>
-        <section id="scrollspyHeading4" class="d-flex bg-danger text-white rounded-bottom text-center vh-100">
+        <!--<section id="scrollspyHeading4"
+            class=" bg-success text-white rounded-bottom justify-content-center text-center">
+            <div class="mx-auto d-block pt-5 pb-5" data-aos="fade-right">
+                <h1 class="display-6">Skills and Techs</h1>
+                </div>
+            <div id="carouselExampleInterval" class="d-block carousel slide pb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 d-none d-lg-block">
+                                    <div class="card bg-dark">
+                                        <div class="mx-auto my-4">
+                                            <img style="height: 200px;" src="assets/flutter.png" class="card-img-top"
+                                                alt="..." />
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Flutter</h5>
+                                            <p class="card-text">
+                                                Able to create a multi-platform adaptive and responsive app using the Flutter framework with Dart language.<br><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="col-lg-3 d-none d-lg-block">
+                                    <div class="card bg-dark">
+                                        <div class="mx-3 my-4 bg-light rounded">
+                                            <img style="height: 200px;" src="assets/Logo.svg" class="card-img-top px-2"
+                                                alt="..." />
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cybersecurity</h5>
+                                            <p class="card-text">
+                                                Participated in the italian Cyberchallenge training program. Acquired skills in various cybersecurity fields and still learning every day.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 d-none d-lg-block">
+                                    <div class="card bg-dark">
+                                        <div class="mx-auto my-4">
+                                            <img style="height: 200px;" src="assets/Java_Logo.svg.png" class="card-img-top"
+                                                alt="..." />
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Java Language</h5>
+                                            <p class="card-text">
+                                                Knownledge of the Java language. Multiple experiences in applications projects, game plugins and coding competitions.<br><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 d-none d-lg-block">
+                                    <div class="card bg-dark">
+                                        <div class="mx-auto my-4">
+                                            <img style="height: 200px;" src="assets/flutter.png" class="card-img-top"
+                                                alt="..." />
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">
+                                                Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.<br><br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+        </section>-->
+        <span class="anchor" id="techs-section"></span>
+        <section id="techs-section" class="bg-success min-vh-100-nav">
+            <section class="container pt-4 pb-5 py-lg-5">
+                <div class="mx-auto d-block pt-5 pb-5 text-center text-light" data-aos="fade-right">
+                    <h1 class="display-6">Technologies</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-3 g-xl-4 pb-md-3 pb-lg-5">
+
+                    <!-- Flutter -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/flutter.png" class="card-img-top" alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Flutter Framework</h3>
+                                <p class="mb-0">Ability to make multi-platform adaptive applications with the
+                                    <b>Flutter</b> framework and <b>Dart</b> language.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Firestore -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/a1.jpeg.webp" class="card-img-top" alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Google Firestore DB</h3>
+                                <p class="mb-0">Knownledge of the <b>noSql database Firestore</b>. Experiences with
+                                    implementation in flutter projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Firebase -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/touchicon-180.png" class="card-img-top"
+                                    alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Google Firebase</h3>
+                                <p class="mb-0">Knownledge of the google cloud <b>Firebase</b> services. Experiences
+                                    with implementation in flutter projects, particularly with the Firebase
+                                    <b>Authentication</b> service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Java -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/Java_Logo.svg.png" class="card-img-top"
+                                    alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Java Language</h3>
+                                <p class="mb-0">Knownledge of the <b>Java</b> language. Multiple experiences in
+                                    applications projects, game plugins and coding competitions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bootstrap -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/Bootstrap_logo.svg" class="card-img-top"
+                                    alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">FrontEnd development</h3>
+                                <p class="mb-0">This website was made by me with <b>Bootstrap</b>. I possess knownledge
+                                    and experiences with <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/PHP-logo.svg.png" class="card-img-top"
+                                    alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">BackEnd development</h3>
+                                <p class="mb-0">Ability to develop a <b>secure</b> backend using the <b>Php</b>
+                                    language. Experiences with projects involving <b>Authentication</b> services,
+                                    <b>IoT</b>, calls
+                                    to <b>APIs</b> and <b>mySQL</b> databases.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;"
+                                    src="assets/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png"
+                                    class="card-img-top" alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">MySQL Database Management</h3>
+                                <p class="mb-0">Knownledge of <b>MySQL</b> databases and ability to plan, create and
+                                    implement one. Experiences of implementation in IoT projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IoT -->
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/2048px-Octicons-mark-github.svg.png"
+                                    class="card-img-top" alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Git & GitHub</h3>
+                                <p class="mb-0">Knownledge of <b>Git</b> and <b>Github</b> version control tools. Most
+                                    of my current projects are hosted on GitHub, like this website</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="fs-5 text-light text-center w-100">Of course there are many more listed on my linkedin
+                        page!</p>
+
+                    <!-- CCIT 
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover bg-light border-0">
+                            <div class="rounded-3 w-auto lh-1 mt-4 ms-4 me-auto">
+                                <img style="height: 50px;" src="assets/Logo.svg" class="card-img-top" alt="..." />
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Cybersecurity skills</h3>
+                                <p class="mb-0">Participated in the italian <b>Cyberchallenge</b> training program.
+                                    Acquired skills in various cybersecurity fields and still learning every day.</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </section>
         </section>
-        <section id="scrollspyHeading5" class="d-flex bg-success text-white rounded-bottom text-center vh-100">
-
+        <span class="anchor" id="contacts-section"></span>
+        <section id="contacts-section" class="d-flex bg-dark text-white rounded-bottom"
+            style="min-height: calc(100vh - 160px);">
+            <div class="my-auto ps-5" data-aos="fade-right">
+                <h1 class="display-6">This site is still WIP</h1>
+            </div>
         </section>
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-
                     <span class="text-muted">&copy 2022 Emanuel Mihali</span>
                 </div>
 
@@ -91,7 +382,8 @@
                                 class="fa-brands fa-github"></i></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
-                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
                 </ul>
             </footer>
         </div>
@@ -103,6 +395,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </html>
