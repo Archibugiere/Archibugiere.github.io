@@ -51,6 +51,22 @@ body {
     position: relative;
 }
 
+body::-webkit-scrollbar {
+    width: 0.4em;
+    background: transparent;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #f8f9fa;
+    height:30px;
+  }
+  
+  body::-webkit-scrollbar-track-piece
+  {
+     display:none;
+  }
+  
+
 
 .card-hover {
     transition: all 0.2s ease;
