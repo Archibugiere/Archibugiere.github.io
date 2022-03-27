@@ -1,18 +1,15 @@
-:root {
-    --navBarHeight: 56px;
-    --navBarHeightNeg: -56px;
-}
-
 .ml11 {
     font-weight: 700;
     font-size: 3.5em;
 }
 
-@media only screen and (max-width: 609px) {
-    :root {
-        --navBarHeight: 96px;
-        --navBarHeightNeg: -96px;
+@media only screen and (max-width: 767px) {
+    .navbar-nav{
+        margin-top: 1em;
     }
+  }
+
+@media only screen and (max-width: 609px) {
     .ml11 {
         font-weight: 700;
         font-size: 3em;
@@ -20,10 +17,6 @@
   }
 
   @media only screen and (max-width: 377px) {
-    :root {
-        --navBarHeight: 136px;
-        --navBarHeightNeg: -136px;
-    }
     .ml11 {
         font-weight: 700;
         font-size: 2.6em;
@@ -105,19 +98,19 @@ body::-webkit-scrollbar {
 }
 
 span.anchor {
-    margin-top: var(--navBarHeightNeg);
+    margin-top: -56px;
     display: block;
-    height: var(--navBarHeight);
+    height: 56px;
     visibility: hidden;
     position: relative;
 }
 
 .firstDivResponsive{
-    height: var(--navBarHeight);
+    height: 56px;
 }
 
 section.min-vh-100-nav{
-    min-height: calc(100vh - var(--navBarHeight));
+    min-height: calc(100vh - 56px);
 }
 
 .ebar-gradient {
