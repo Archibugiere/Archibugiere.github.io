@@ -96,13 +96,14 @@
     .nav-pills .nav-link.nav-end {
         border-bottom-left-radius: .25rem;
     }
+
     .navbar-nav {
         border-radius: .25rem;
     }
 }
 
-.navbar-toggler{
-    border-radius:0px;
+.navbar-toggler {
+    border-radius: 0px;
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
 }
@@ -197,4 +198,8 @@ a:active {
 
 .card-img-top {
     width: auto;
+}
+
+.row .col.middle-line {
+    border-right: .0625rem solid #dce6f3;
 }
