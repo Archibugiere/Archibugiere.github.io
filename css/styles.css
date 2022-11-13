@@ -174,7 +174,7 @@ section.min-vh-100-nav {
     min-height: calc(100vh);
 }
 
-.ebar-gradient {
+.polimi-gradient {
     background: linear-gradient(227deg, #3aa3ca, #969696);
     background-size: 100% 100%;
 }
