@@ -175,12 +175,17 @@ section.min-vh-100-nav {
 }
 
 .polimi-gradient {
-    background: linear-gradient(227deg, #3b86d1, #b6b6b6);
+    background: linear-gradient(227deg, #818181, #4d1163);
     background-size: 100% 100%;
 }
 
 .oli-gradient {
-    background: linear-gradient(227deg, #b4cbed, #e2a4ad);
+    background: linear-gradient(227deg, #b4cbed, #d26979);
+    background-size: 100% 100%;
+}
+
+.ec-gradient {
+    background: linear-gradient(227deg, #152375, #585858);
     background-size: 100% 100%;
 }
 
